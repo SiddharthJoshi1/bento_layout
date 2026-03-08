@@ -81,12 +81,15 @@ void main() {
       expect(geo[0]!.crossAxisOffset, 0);
     });
 
-    test('halfCard has correct pixel dimensions at totalWidth=400, unitHeight=100', () {
-      final geo = pack([item(BentoItemSize.halfCard)]);
-      // widthFraction=0.5 → 200px, heightSpan=1.0 → 100px
-      expect(geo[0]!.crossAxisExtent, 200);
-      expect(geo[0]!.mainAxisExtent, 100);
-    });
+    test(
+      'halfCard has correct pixel dimensions at totalWidth=400, unitHeight=100',
+      () {
+        final geo = pack([item(BentoItemSize.halfCard)]);
+        // widthFraction=0.5 → 200px, heightSpan=1.0 → 100px
+        expect(geo[0]!.crossAxisExtent, 200);
+        expect(geo[0]!.mainAxisExtent, 100);
+      },
+    );
 
     test('fullTower has correct pixel dimensions', () {
       final geo = pack([item(BentoItemSize.fullTower)]);
@@ -150,8 +153,11 @@ void main() {
       // All in the same row (y=0)
       for (int i = 0; i < 4; i++) {
         expect(geo[i]!.scrollOffset, 0, reason: 'tile $i should be at y=0');
-        expect(geo[i]!.crossAxisOffset, i * 100.0,
-            reason: 'tile $i should be at x=${i * 100}');
+        expect(
+          geo[i]!.crossAxisOffset,
+          i * 100.0,
+          reason: 'tile $i should be at x=${i * 100}',
+        );
       }
     });
 
@@ -196,14 +202,14 @@ void main() {
           final ga = geo[a]!;
           final gb = geo[b]!;
 
-          final aLeft   = ga.crossAxisOffset;
-          final aRight  = ga.crossAxisOffset + ga.crossAxisExtent;
-          final aTop    = ga.scrollOffset;
+          final aLeft = ga.crossAxisOffset;
+          final aRight = ga.crossAxisOffset + ga.crossAxisExtent;
+          final aTop = ga.scrollOffset;
           final aBottom = ga.scrollOffset + ga.mainAxisExtent;
 
-          final bLeft   = gb.crossAxisOffset;
-          final bRight  = gb.crossAxisOffset + gb.crossAxisExtent;
-          final bTop    = gb.scrollOffset;
+          final bLeft = gb.crossAxisOffset;
+          final bRight = gb.crossAxisOffset + gb.crossAxisExtent;
+          final bTop = gb.scrollOffset;
           final bBottom = gb.scrollOffset + gb.mainAxisExtent;
 
           final xOverlap = aLeft < bRight && aRight > bLeft;
@@ -212,7 +218,8 @@ void main() {
           expect(
             xOverlap && yOverlap,
             isFalse,
-            reason: 'tiles $a and $b overlap\n'
+            reason:
+                'tiles $a and $b overlap\n'
                 '  tile $a: x=$aLeft–$aRight  y=$aTop–$aBottom\n'
                 '  tile $b: x=$bLeft–$bRight  y=$bTop–$bBottom',
           );
@@ -250,10 +257,7 @@ void main() {
     test('custom strategy dimensions are respected', () {
       // Override halfCard to be full width
       final strategy = _FullWidthHalfCardStrategy();
-      final geo = pack(
-        [item(BentoItemSize.halfCard)],
-        strategy: strategy,
-      );
+      final geo = pack([item(BentoItemSize.halfCard)], strategy: strategy);
       // Custom strategy returns widthFraction=1.0 for halfCard → 400px wide
       expect(geo[0]!.crossAxisExtent, 400);
     });
@@ -266,7 +270,10 @@ void main() {
   group('BentoGridDelegate.shouldRelayout', () {
     test('returns true when items list changes', () {
       final itemsA = [item(BentoItemSize.halfCard)];
-      final itemsB = [item(BentoItemSize.halfCard), item(BentoItemSize.halfCard)];
+      final itemsB = [
+        item(BentoItemSize.halfCard),
+        item(BentoItemSize.halfCard),
+      ];
 
       final delegateA = BentoGridDelegate(items: itemsA, unitHeight: 100);
       final delegateB = BentoGridDelegate(items: itemsB, unitHeight: 100);

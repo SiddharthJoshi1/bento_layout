@@ -43,6 +43,5 @@ class BentoGridDelegate extends SliverGridDelegate {
 
   @override
   bool shouldRelayout(BentoGridDelegate oldDelegate) =>
-      oldDelegate.items != items ||
-      oldDelegate.unitHeight != unitHeight;
+      oldDelegate.items != items || oldDelegate.unitHeight != unitHeight;
 }

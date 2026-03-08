@@ -48,17 +48,17 @@ class DefaultBentoSizingStrategy implements BentoSizingStrategy {
       case BentoItemSize.quarterTower:
         return const BentoDimension(widthFraction: 0.25, heightSpan: 2.0);
       case BentoItemSize.halfBar:
-        return const BentoDimension(widthFraction: 0.5,  heightSpan: 0.5);
+        return const BentoDimension(widthFraction: 0.5, heightSpan: 0.5);
       case BentoItemSize.halfCard:
-        return const BentoDimension(widthFraction: 0.5,  heightSpan: 1.0);
+        return const BentoDimension(widthFraction: 0.5, heightSpan: 1.0);
       case BentoItemSize.halfTower:
-        return const BentoDimension(widthFraction: 0.5,  heightSpan: 2.0);
+        return const BentoDimension(widthFraction: 0.5, heightSpan: 2.0);
       case BentoItemSize.fullBar:
-        return const BentoDimension(widthFraction: 1.0,  heightSpan: 0.5);
+        return const BentoDimension(widthFraction: 1.0, heightSpan: 0.5);
       case BentoItemSize.fullCard:
-        return const BentoDimension(widthFraction: 1.0,  heightSpan: 1.0);
+        return const BentoDimension(widthFraction: 1.0, heightSpan: 1.0);
       case BentoItemSize.fullTower:
-        return const BentoDimension(widthFraction: 1.0,  heightSpan: 2.0);
+        return const BentoDimension(widthFraction: 1.0, heightSpan: 2.0);
     }
   }
 }

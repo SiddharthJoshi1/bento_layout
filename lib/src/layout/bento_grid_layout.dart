@@ -5,10 +5,7 @@ import 'package:flutter/rendering.dart';
 /// All layout work is done upfront in [SkylinePacking.pack] —
 /// this class just hands the results to Flutter on demand.
 class BentoGridLayout extends SliverGridLayout {
-  const BentoGridLayout({
-    required this.geometryMap,
-    required this.totalHeight,
-  });
+  const BentoGridLayout({required this.geometryMap, required this.totalHeight});
 
   final Map<int, SliverGridGeometry> geometryMap;
   final double totalHeight;
@@ -17,8 +14,7 @@ class BentoGridLayout extends SliverGridLayout {
   double computeMaxScrollOffset(int childCount) => totalHeight;
 
   @override
-  SliverGridGeometry getGeometryForChildIndex(int index) =>
-      geometryMap[index]!;
+  SliverGridGeometry getGeometryForChildIndex(int index) => geometryMap[index]!;
 
   @override
   int getMaxChildIndexForScrollOffset(double scrollOffset) =>

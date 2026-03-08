@@ -141,31 +141,19 @@ class BentoExamplePage extends StatelessWidget {
           // Four quarter-bars
           BentoItem(
             size: BentoItemSize.quarterBar,
-            child: _Tile(
-              label: 'qBar',
-              color: const Color(0xFF7D6608),
-            ),
+            child: _Tile(label: 'qBar', color: const Color(0xFF7D6608)),
           ),
           BentoItem(
             size: BentoItemSize.quarterBar,
-            child: _Tile(
-              label: 'qBar',
-              color: const Color(0xFFB7950B),
-            ),
+            child: _Tile(label: 'qBar', color: const Color(0xFFB7950B)),
           ),
           BentoItem(
             size: BentoItemSize.quarterBar,
-            child: _Tile(
-              label: 'qBar',
-              color: const Color(0xFFD4AC0D),
-            ),
+            child: _Tile(label: 'qBar', color: const Color(0xFFD4AC0D)),
           ),
           BentoItem(
             size: BentoItemSize.quarterBar,
-            child: _Tile(
-              label: 'qBar',
-              color: const Color(0xFFF1C40F),
-            ),
+            child: _Tile(label: 'qBar', color: const Color(0xFFF1C40F)),
           ),
 
           // Four quarter-towers

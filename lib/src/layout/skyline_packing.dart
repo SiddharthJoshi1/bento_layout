@@ -83,9 +83,6 @@ class SkylinePacking {
 
     final double totalHeight = skyline.reduce((a, b) => a > b ? a : b);
 
-    return BentoLayoutDetails(
-      totalHeight: totalHeight,
-      geometryMap: geometry,
-    );
+    return BentoLayoutDetails(totalHeight: totalHeight, geometryMap: geometry);
   }
 }

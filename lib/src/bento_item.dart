@@ -12,10 +12,7 @@ import 'bento_item_size.dart';
 /// )
 /// ```
 class BentoItem {
-  const BentoItem({
-    required this.size,
-    required this.child,
-  });
+  const BentoItem({required this.size, required this.child});
 
   /// The size of this tile in the grid.
   final BentoItemSize size;
