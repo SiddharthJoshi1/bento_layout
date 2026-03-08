@@ -158,3 +158,6 @@ Width is always a fraction of the total available grid width. Height is always a
 - See the `example/` directory for a runnable demo
 - The algorithm is documented in detail in the package source — see `src/layout/skyline_packing.dart`
 - To report issues or contribute, visit the project repository
+
+
+Built with ❤️ by ([text](https://builtbysid.dev/))
