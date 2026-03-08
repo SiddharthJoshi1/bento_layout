@@ -160,4 +160,4 @@ Width is always a fraction of the total available grid width. Height is always a
 - To report issues or contribute, visit the project repository
 
 
-Built with ❤️ by ([text](https://builtbysid.dev/))
+Built with ❤️ by ([BuiltBySid](https://builtbysid.dev/))
