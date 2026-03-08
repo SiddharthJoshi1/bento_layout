@@ -1,0 +1,13 @@
+name: bento_layout_example
+description: Demonstrates bento_layout package usage.
+publish_to: none
+version: 1.0.0
+
+environment:
+  sdk: ^3.10.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  bento_layout:
+    path: ../

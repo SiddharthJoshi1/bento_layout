@@ -1,0 +1,24 @@
+name: bento_layout
+description: >-
+  A Flutter package for building bento-style grid layouts using the skyline
+  bin-packing algorithm. Tiles of varying sizes are packed without overlap or
+  unnecessary gaps. Width fills the parent; height is stable across screen sizes.
+version: 0.1.0
+
+environment:
+  sdk: ^3.10.4
+
+topics:
+  - layout
+  - grid
+  - ui
+  - bento
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
