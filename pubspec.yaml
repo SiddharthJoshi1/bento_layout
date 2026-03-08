@@ -4,6 +4,8 @@ description: >-
   bin-packing algorithm. Tiles of varying sizes are packed without overlap or
   unnecessary gaps. Width fills the parent; height is stable across screen sizes.
 version: 0.1.0
+repository: https://github.com/SiddharthJoshi1/bento_layout
+issue_tracker: https://github.com/SiddharthJoshi1/bento_layout/issues
 
 environment:
   sdk: ^3.10.4
