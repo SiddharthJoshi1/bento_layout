@@ -8,7 +8,7 @@ A Flutter package for building bento-style grid layouts using the **skyline bin-
 
 | Portrait | Landscape |
 |----------|-----------|
-| ![Portrait demo](assets/videos/portrait_mode.gif) | ![Landscape demo](assets/videos/landscape_mode.gif) |
+| ![Portrait demo](https://raw.githubusercontent.com/SiddharthJoshi1/bento_layout/refs/heads/main/assets/videos/portrait_mode.gif) | ![Landscape demo](https://raw.githubusercontent.com/SiddharthJoshi1/bento_layout/refs/heads/main/assets/videos/landscape_mode.gif) |
 
 ---
 
