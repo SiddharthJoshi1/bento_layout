@@ -4,6 +4,14 @@ A Flutter package for building bento-style grid layouts using the **skyline bin-
 
 ---
 
+## Examples
+
+| Portrait | Landscape |
+|----------|-----------|
+| ![Portrait demo](assets/videos/portrait_mode.gif) | ![Landscape demo](assets/videos/landscape_mode.gif) |
+
+---
+
 ## Features
 
 - **9 named tile sizes** — `quarterBar`, `halfCard`, `fullTower` etc. Names encode both dimensions so no docs needed
@@ -161,3 +169,5 @@ Width is always a fraction of the total available grid width. Height is always a
 
 
 Built with ❤️ by [BuiltBySid](https://builtbysid.dev/)
+
+---
